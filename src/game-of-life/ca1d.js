@@ -82,7 +82,7 @@ var drawAgain = function () {
   
   drawOnce();
   
-  timeout = window.setTimeout(drawAgain, 200);
+  timeout = window.setTimeout(drawAgain, 1000);
 };
 
 drawOnce();
