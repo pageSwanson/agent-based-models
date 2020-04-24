@@ -42,6 +42,11 @@ var theRuleOfLaw = function (left, middle, right) {
 }
 
 
+// we have a bug
+
+// what happens when we modify a cell state
+// and call this function again
+// for a different cell
 var amIAlive = function (i) {
   var me = cells[i].isAlive;
   
