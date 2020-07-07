@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+		<title>&gt; sample &lt;</title>
+		<script>
+			function hideContent(id) {
+				document.getElementById(id).style.display = 'none';
+			}
+		</script>
+  </head>
+	<style>
+		body {
+			font: 1rem "Helvetica";
+		}
+		h1, h2, h4, h6 {
+			line-height: .5rem;
+		}
+		h2 {
+			margin-left: 2rem;
+		}
+		h4 {
+			margin-left: 8rem;
+		}
+		h6 {
+			margin-top: -0.5rem;
+			margin-left: 11rem;
+		}
+		li {
+			line-height: 1.3rem;
+		}
+		ul.nav li {
+			margin-left: 3rem;
+			font: bold 2rem "Futura", sans-serif;
+		}
+		.nav li:nth-child(1) {
+			list-style: url('ZJlMyWR.gif'); /* we can style with our own images */
+		}
+		.nav li:nth-child(2) {
+			list-style: url('kweiYm3.gif');
+		}
+		.centered {
+			display: block;
+			margin: 2rem auto;
+		}
+		p.centered {
+			width: 40%;
+		}
+		img.centered {
+			border-color: black darkgrey grey lightgrey; /* top, right, bottom, left */
+			border-width: 1.2rem;
+			border-style: groove ridge;
+			border-radius: 1rem 6.2rem; /* top-left and bottom-right, top-right and bottom-left */
+			background: #333c3b;
+			padding: 1rem 6rem 1rem;
+		}
+		div.centered {
+			margin: 6rem auto 0; 
+			font-size: .9rem;
+		}
+		div.centered div {
+			display: inline;
+			outline: .3rem outset #947070; /* width, style, color  */
+			border: 1rem solid #354b3f;
+			border-radius: .5rem;
+			background: #ddebad;
+			padding: 2.6rem;
+			margin: 2.4rem 2.4rem 4rem; /* top, horizontal, bottom */
+		}
+		div.centered div:first-child {
+			padding: 6rem 3.2rem;
+		}
+		div.centered div:last-child {
+			padding: .2rem 6.2rem; /* top-bottom, left-right */
+		}
+	</style>
+	<body>
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/heading_elements -->
+		<h1>Headings</h1>
+		<h2>with varying</h2>
+		<h4>levels of</h3>
+		<h6>emphasis</h6>
+
+		<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">A hyperlink</a>
+
+		<ul>
+			<li>Lists can be useful for quickly organizing content</li>
+			<ul class="sub-list">
+				<li>You can create sublists</li>
+				<li>Here we use another 'ul' tag in place of an 'li'</li>
+				<li>They can be styled for obvious distinctions</li>
+			</ul>
+			<li>You can embed <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">a hyperlink</a></li>
+		</ul>
+		Also convenient for site navigation (relative anchors)
+		<ul class="nav">
+			<li>To <a href="helpful-links.html">resources</a></li>
+			<li>To <a href="../index.html">home</a></li>
+		</ul>
+
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em  -->
+		<p class="centered">
+		We can build sections of text using 'p' tags. We can give <em>emphasis</em> using the 'em' tag when a word should be stressed in the context of a sentence. We can also use the 'strong' tag for items that are important for the <strong>overall meaning</strong> of a section of text. 
+		</p>
+
+		<img class="centered" title="An image can be included from external sources, like this album cover." src="https://upload.wikimedia.org/wikipedia/en/8/83/Outward_Bound_%28album%29.jpg" alt="Cover art for Eric Dolphy's 1960 album 'Outward Bound'"></img>
+
+		<div class="centered">
+			<div>Different</div>
+			<div>box-sizing</div>
+			<div id="last" onclick="hideContent('last')">techniques.</div>
+		</div>
+	</body>
+</html>
