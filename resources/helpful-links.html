@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-		<title>&gt; resources &lt;</title>
+		<title>&#x2935; Resources</title>
   </head>
 	<style>
 		body {
@@ -11,8 +11,17 @@
 		li {
 			line-height: 1.3em;
 		}
-		li.web-resources {
-			color: lightgreen;
+		li.console {
+			font-family: Monospace;
+		}
+		.web-resources {
+			color: blue;
+		}
+		.frameworks {
+			color: darkred;
+		}
+		.example-sites {
+			color: gold;
 		}
 	</style>
   <body>
@@ -20,9 +29,26 @@
 
 		<!-- links compiled June 22 -->
 		<ul>
-			<li><a href="https://git-scm.com/doc">Start using Git</a></li>
-			<li><a href="https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf">Git cheat-sheet</a></li>
-			<li><a href="https://pages.github.com/">Host a project like this</a></li>
+			<li>
+				<h3>Common code editing tools</h3>
+				<ul>
+					<li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
+					<li><a href="http://www.uvviewsoft.com/cudatext/">CudaText</a></li>
+					<li><a href="https://atom.io/">Atom</a></li>
+					<li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+					<li class="console"><a href="https://www.vim.org/">vim</a></li>
+					<li class="console"><a href="http://www.gnu.org/software/emacs/">Emacs</a></li>
+					<li class="console">and lastly ... <a href="https://www.spacemacs.org/">??? Spacemacs ???</a></li>
+				</ul>
+			</li>
+			<li>
+				<h3>Source control</h3>
+				<ul>
+					<li><a href="https://git-scm.com/doc">Start using Git</a></li>
+					<li><a href="https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf">Git cheat-sheet</a></li>
+					<li><a href="https://pages.github.com/">Host a project like this</a></li>
+				</ul>
+			</li>
 			<li>
 				<h3>Open-source projects on Github</h3>
 				<ul>
@@ -31,8 +57,8 @@
 					<li><a href="https://github.com/wikimedia">Wikimedia</a> (Organization responsible for Wikipedia)</li>
 				</ul>
 			</li>
-			<li class="web-resources">
-				<h3>Resources for learning about the web</h3>
+			<li>
+				<h3 class="web-resources">Resources for learning about the web</h3>
 				<ul>
 					<li>Searchable <a href="https://developer.mozilla.org/en-US/docs/Web">documentation of web standards</a> by the developers of Firefox</li>
 					<li>Bottom =&gt; top <a href="https://javascript.info/">JavaScript resource for web developers</a></li>
@@ -41,13 +67,21 @@
 					<li>Example of a <a href="https://vuejs.org/v2/guide/">modern framework</a> for web applications</li>
 				</ul>
 			</li>
-		<li>
-			<h3>Course resources</h3>
-			<ul>
-				<li>Office hours <a href="https://calendly.com/coder-nhfpl">sign-up</a></li>
-				<li>NHFPL <a href="https://nhfpl.libnet.info/events">events calendar</a></li>
-			</ul>
-		</li>
+			<li>
+				<h3 class="frameworks">Modern frameworks</h3>
+				<ul>
+					<li>Widespread JavaScript framework: <a href="https://vuejs.org/">Vue.js</a></li>
+					<li>Popular application framework using Ruby: <a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+					<li>Very light framework using Python, easy start: <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a></li>
+				</ul>
+			</li>
+			<li>
+				<h3>Course resources</h3>
+				<ul>
+					<li>Office hours <a href="https://calendly.com/coder-nhfpl">sign-up</a></li>
+					<li>NHFPL <a href="https://nhfpl.libnet.info/events">events calendar</a></li>
+				</ul>
+			</li>
 		</ul>
   </body>
 </html>
