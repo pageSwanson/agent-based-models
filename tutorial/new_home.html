@@ -2,19 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
+
     <title>My test page</title>
+
+    
   </head>
   <body>
-    <p>
-      This is some sample text.<span>Additional text here</span>
+    <p style="color : blue;">
+      This is some sample text.<span class="celestes-dynamic-element">Additional   text here</span>
     </p>
     <p>
-      <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" style="color : yellow;">
         This is a link
       </a>
     </p>
     <p>
-      This is also some text.
+      This is also some text.<span style="color: magenta"> And just one more thing.</span>
     </p>
   </body>
+  <footer>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style type="text/css">
+      body {
+        text-align: center;
+      }
+      span {
+        color: orange;
+      }
+    </style>
+  </footer>
 </html>
