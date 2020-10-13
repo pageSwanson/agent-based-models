@@ -1,20 +1,8 @@
-body {
-	color: black;
-}
-
 span {
 	text-decoration : underline dotted;
 	color: brown;
 }
 
-span {
-	color: orange;
-}
-
 span#this-particular-element {
 	color: red;
-}
-
-span {
-	color: blue;
 }

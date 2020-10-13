@@ -5,30 +5,31 @@
 
     <title>My test page</title>
 
-    
-  </head>
-  <body>
-    <p style="color : blue;">
-      This is some sample text.<span class="celestes-dynamic-element">Additional   text here</span>
-    </p>
-    <p>
-      <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" style="color : yellow;">
-        This is a link
-      </a>
-    </p>
-    <p>
-      This is also some text.<span style="color: magenta"> And just one more thing.</span>
-    </p>
-  </body>
-  <footer>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style type="text/css">
       body {
         text-align: center;
       }
-      span {
+      span.span-class {
         color: orange;
       }
     </style>
-  </footer>
+    
+  </head>
+  <body>
+    <span>
+      This is the first item.
+    </span>
+    <p>
+      This is some sample text.<span class="span-class"> Additional text here</span>
+    </p>
+    <p>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">
+        This is a link
+      </a>
+    </p>
+    <p>
+      This is also some text.<span id="this-particular-element"> And just one more thing.</span>
+    </p>
+  </body>
 </html>
