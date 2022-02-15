@@ -14,22 +14,54 @@
         color: orange;
       }
     </style>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
     
   </head>
   <body>
-    <span>
-      This is the first item.
-    </span>
+    <h1>
+      Web Tutorial
+    </h1>
+    <ol>
+      <li>
+        <a href="#example-paragraph-header">Example Paragraphs</a>
+      </li>
+      <ul>
+        <li>
+          <a href="">Paragraph One</a>
+        </li>
+        <li>
+          <a href="">Paragraph Two</a>
+        </li>
+        <li >
+          <a href="">Paragraph Three</a>
+        </li>
+      </ol>
+    </ol>
+    <h2 id="example-paragraph-header">
+      Example Paragraphs
+    </h2>
+    <h4>
+      Paragraph One
+    </h4>
     <p>
-      This is some sample text.<span class="span-class"> Additional text here</span>
+      This is the first paragraph. This is some sample text.<span class="span-class"> Additional text here</span>
     </p>
+    <h4>
+      Paragraph Two
+    </h4>
     <p>
+      The next paragraph: 
       <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">
-        This is a link
-      </a>
+        This is a link 
+      </a>  
+      And here's some additional content after the link.
     </p>
+    <h4>
+      Paragraph Three
+    </h4>
     <p>
       This is also some text.<span id="this-particular-element"> And just one more thing.</span>
     </p>
+    <a href="different_place.html">Go to Different Place</a>
   </body>
 </html>
